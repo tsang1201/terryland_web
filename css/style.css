@@ -280,6 +280,15 @@ tr:hover td { background: rgba(212, 175, 55, 0.05); }
 .bar { height: 8px; background: rgba(255,255,255,0.08); border-radius: 10px; overflow: hidden; margin-top: 6px; }
 .bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--gold-dark), var(--gold)); border-radius: 10px; }
 
+/* 丹方 */
+.td-effect { color: var(--gold-light); font-size: 13px; max-width: 220px; min-width: 150px; }
+.td-price { color: #ffd700; white-space: nowrap; }
+
+/* 世界 Boss */
+.boss-card .hp-line { font-size: 13px; line-height: 1.7; }
+.boss-card .hp-line b { color: var(--gold-light); }
+.boss-card .bar i { background: linear-gradient(90deg, #5a0b0b, #c0392b); }
+
 /* 備註 */
 .note {
   background: rgba(139, 0, 0, 0.15);

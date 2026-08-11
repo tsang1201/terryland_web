@@ -8,6 +8,8 @@
     { id: 'technique', label: '功法' },
     { id: 'treasure',  label: '法寶' },
     { id: 'pet',       label: '靈寵' },
+    { id: 'alchemy',   label: '丹方' },
+    { id: 'worldboss', label: '世界Boss' },
     { id: 'adventure', label: '奇遇' },
     { id: 'gacha',     label: '抽獎' },
     { id: 'dungeon',   label: '副本' },
@@ -49,6 +51,8 @@
         <div class="stat-card"><div class="num">${D.pets.length}</div><div class="lbl">隻靈寵</div></div>
         <div class="stat-card"><div class="num">${D.story.length}</div><div class="lbl">章主線</div></div>
         <div class="stat-card"><div class="num">${D.dungeons.length}</div><div class="lbl">座副本</div></div>
+        <div class="stat-card"><div class="num">${D.alchemy.pills.length}</div><div class="lbl">張丹方</div></div>
+        <div class="stat-card"><div class="num">${D.worldBoss.bosses.length}</div><div class="lbl">隻世界巨妖</div></div>
         <div class="stat-card"><div class="num">4</div><div class="lbl">抽獎獎池</div></div>
         <div class="stat-card"><div class="num">${D.effects.length}</div><div class="lbl">特殊效果</div></div>
       </div>
@@ -184,6 +188,89 @@
           ${rows}
         </table>
         <div class="note">${esc(D.petNote)}</div>
+      </div>
+    `;
+  };
+
+  pages.alchemy = () => {
+    const rateBadges = D.alchemy.rates.map(r => `
+      <span class="badge badge-tier">${esc(r.realm)} ${esc(r.rate)}</span>`).join('');
+    const sel = `<select id="f-p" onchange="window.__renderAlchemy()">
+      <option value="">全部階級</option>
+      ${D.alchemy.rates.map(r => `<option value="${r.realm}">${r.realm}</option>`).join('')}
+    </select>`;
+
+    const rows = D.alchemy.pills.map(p => `
+      <tr>
+        <td><b>${esc(p.name)}</b>
+          <span class="badge badge-tier">${esc(p.tier)}</span>
+          <span class="badge ${p.type === '突破' ? 'badge-unique' : p.type === '永久' ? 'badge-rare' : 'badge-elem'}">${esc(p.type)}</span>
+        </td>
+        <td>${esc(p.usage)}</td>
+        <td class="td-effect">${esc(p.effect)}</td>
+        <td>${p.recipe.map(i => `<span class="chip" style="font-size:11px">${esc(i)}</span>`).join(' ')}</td>
+        <td class="td-price">${p.price.toLocaleString()}</td>
+      </tr>`).join('');
+
+    return `
+      <div class="panel">
+        <h2 class="page-title">⚗ 煉丹方子</h2>
+        <div class="page-desc">採集靈草、按方煉丹。階級越高越難成丹——
+          ${rateBadges}</div>
+        <div class="filter-row">${sel}</div>
+        <table>
+          <tr><th>丹名</th><th>可服用</th><th>效果</th><th>丹方（素材）</th><th>靈石</th></tr>
+          <tbody id="pill-tbody">${rows}</tbody>
+        </table>
+        <div class="note">${esc(D.alchemy.note)}</div>
+      </div>
+    `;
+  };
+
+  pages.worldboss = () => {
+    const ruleChips = D.worldBoss.rules.map(r => `
+      <div class="card">
+        <div class="desc">⚔ ${esc(r)}</div>
+      </div>`).join('');
+
+    const cards = D.worldBoss.bosses.map(b => {
+      const fill = Math.round((b.people / 10) * 10);
+      return `
+      <div class="card boss-card">
+        <div class="name"><span>🐉</span>${esc(b.name)}
+          <span class="badge badge-tier">${esc(b.realm)}</span>
+          <span class="badge ${b.high ? 'badge-unique' : 'badge-elem'}">${esc(b.tier)}</span>
+        </div>
+        <div class="desc">
+          <div class="hp-line"><b>共有血量</b>
+            <span style="float:right;color:#ffd700">${b.hp.toLocaleString()}</span></div>
+          <div class="bar"><i style="width:${fill * 10}%;background:#8b0000"></i></div>
+          <div class="hp-line" style="margin-top:6px">血量倍率 <b>x${b.mult}</b>
+            <span style="float:right;opacity:.8">滿配約需 ${b.people} 人合力</span></div>
+        </div>
+        <div class="stats">
+          <b>掉落獎勵</b><br>
+          <span class="chip" style="font-size:11px">🌿 ${esc(b.herbs)}</span>
+          <span class="chip" style="font-size:11px">🧱 ${esc(b.materials)}</span>
+          <span class="chip" style="font-size:11px">💊 ${esc(b.pills)}</span>
+          <span class="chip" style="font-size:11px">💰 ${esc(b.stones)} 靈石</span>
+          ${b.high ? '<span class="chip" style="font-size:11px;color:#ffd700">💎 高級靈石 x1</span>' : ''}
+        </div>
+      </div>`;
+    }).join('');
+
+    return `
+      <div class="panel">
+        <h2 class="page-title">🐲 世界 Boss</h2>
+        <div class="page-desc">${esc(D.worldBoss.desc)}</div>
+        <div class="grid" style="margin-top:14px">${ruleChips}</div>
+      </div>
+      <div class="panel">
+        <h2 class="block-title">八境巨妖一覽</h2>
+        <div class="grid">${cards}</div>
+      </div>
+      <div class="panel">
+        <div class="note">${esc(D.worldBoss.note)}</div>
       </div>
     `;
   };
@@ -327,6 +414,8 @@
     if (id === 'technique' && f) { f.value = ''; document.getElementById('f-e').value = ''; }
     const fTr = document.getElementById('f-tr');
     if (id === 'treasure' && fTr) { fTr.value = ''; }
+    const fP = document.getElementById('f-p');
+    if (id === 'alchemy' && fP) { fP.value = ''; }
   }
 
   /* ---------- 篩選 ---------- */
@@ -361,6 +450,23 @@
           </div>
           <div class="desc">${esc(x.desc)}</div>
         </div>`).join('');
+  };
+
+  window.__renderAlchemy = () => {
+    const t = document.getElementById('f-p').value;
+    document.getElementById('pill-tbody').innerHTML = D.alchemy.pills
+      .filter(p => !t || p.tier === t)
+      .map(p => `
+        <tr>
+          <td><b>${esc(p.name)}</b>
+            <span class="badge badge-tier">${esc(p.tier)}</span>
+            <span class="badge ${p.type === '突破' ? 'badge-unique' : p.type === '永久' ? 'badge-rare' : 'badge-elem'}">${esc(p.type)}</span>
+          </td>
+          <td>${esc(p.usage)}</td>
+          <td class="td-effect">${esc(p.effect)}</td>
+          <td>${p.recipe.map(i => `<span class="chip" style="font-size:11px">${esc(i)}</span>`).join(' ')}</td>
+          <td class="td-price">${p.price.toLocaleString()}</td>
+        </tr>`).join('');
   };
 
   /* ---------- 背景音樂控制 ---------- */

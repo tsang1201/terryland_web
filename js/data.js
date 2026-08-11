@@ -5,8 +5,8 @@ const DATA = {
   // ===== 境界 =====
   realms: [
     { name: '凡人',   stage: '起點',   threshold: '0',      rate: '—' },
-    { name: '練氣',   stage: '1-12層', threshold: '200~2400', rate: '80%' },
-    { name: '築基',   stage: '初/中/後', threshold: '3000~5000', rate: '60%' },
+    { name: '練氣',   stage: '1-12層', threshold: '200~2400', rate: '70%' },
+    { name: '築基',   stage: '初/中/後', threshold: '3000~5000', rate: '50%' },
     { name: '結丹',   stage: '初/中/後', threshold: '7000~11000', rate: '40%' },
     { name: '元嬰',   stage: '初/中/後', threshold: '15000~24000', rate: '20%' },
     { name: '化神',   stage: '初/中/後', threshold: '30000~42000', rate: '15%' },
@@ -176,7 +176,7 @@ const DATA = {
     { name: '十億尊魂幡', tier: '通天靈寶', type: '攻擊型', desc: '攻擊+25%，30%機率300%傷害+詛咒', unique: true },
     { name: '雨之仙劍', tier: '通天靈寶', type: '攻擊型', desc: '攻擊+30%，25%機率250%傷害+冰凍+虛弱', unique: true },
     { name: '滅神矛', tier: '通天靈寶', type: '攻擊型', desc: '攻擊+30%，25%機率300%傷害，無視50%防禦', unique: true },
-    { name: '掌天瓶', tier: '通天靈寶', type: '輔助型', desc: '修練速度+100%，種植+200%，每回合回8%', unique: true },
+    { name: '掌天瓶', tier: '通天靈寶', type: '輔助型', desc: '修練速度+100%，靈草種植/成熟速度+200%，戰鬥中每回合回復8%最大生命', unique: true },
     { name: '天逆珠', tier: '通天靈寶', type: '全能型', desc: '全屬性+15%，20%機率時間加速（行動兩次）', unique: true },
     { name: '萬妖塔', tier: '通天靈寶', type: '防禦型', desc: '防禦+30%，被攻擊25%反彈50%+護盾', unique: true },
     { name: '元合五極山', tier: '通天靈寶', type: '全能型', desc: '全屬性+20%，每回合五行鎮壓', unique: true },
@@ -201,7 +201,8 @@ const DATA = {
     pools: [
       { id: 'special', name: '特殊池', rate: '1%', items: [
         { name: '通天靈寶', rate: '0.1%', desc: '獨一無二至寶' },
-        { name: '頂級法寶', rate: '0.3%', desc: '獨一無二' },
+        { name: '頂級法寶', rate: '0.2%', desc: '獨一無二' },
+        { name: '天選之人', rate: '0.1%', desc: '獲得稱號「天選之人」' },
         { name: '頂級功法', rate: '0.1%', desc: '屬性匹配' },
         { name: '高階功法', rate: '0.3%', desc: '' },
         { name: '高階丹藥', rate: '0.2%', desc: '化神以上' },
@@ -257,7 +258,8 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '5%', desc: '' },
       ] },
       { id: 'lucky', name: '歐皇池', cost: '1 高級靈石', desc: '頂級獎勵', items: [
-        { name: '頂級法寶', rate: '14%', desc: '獨一無二' },
+        { name: '天選之人', rate: '0.5%', desc: '獲得稱號「天選之人」' },
+        { name: '頂級法寶', rate: '13.5%', desc: '獨一無二' },
         { name: '高階法寶', rate: '15%', desc: '' },
         { name: '元嬰/化神丹藥', rate: '12%', desc: '' },
         { name: '元嬰/化神靈草', rate: '12%', desc: '' },
@@ -295,7 +297,7 @@ const DATA = {
     { cost: '7 個高階資材', result: '隨機高階法寶', note: '' },
     { cost: '9 個頂級資材', result: '隨機頂級法寶', note: '失敗額外報廢1-2個資材' },
   ],
-  forgeNote: '煉器有機率失敗；頂級法寶為獨一無二，若已被他人取走，會改給 10000 靈石補償。',
+  forgeNote: '煉器失敗只損失三分之一材料（其餘退回）；頂級法寶為獨一無二，若已被他人取走，會改給 10000 靈石補償。',
 
   // ===== 靈寵 =====
   pets: [

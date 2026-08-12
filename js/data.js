@@ -388,7 +388,7 @@ const DATA = {
     { name: '石硤尾邨', realm: '練氣', boss: '葉問', note: '' },
     { name: '凌晨三點嘅麥當勞', realm: '築基', boss: '麥當勞叔叔', note: '' },
     { name: '萬妖谷', realm: '結丹', boss: '妖皇', note: '' },
-    { name: '幽冥鬼域', realm: '元嬰', boss: '幽冥鬼王', note: '' },
+    { name: '昆吾山', realm: '元嬰', boss: '元刹聖祖', note: '' },
     { name: '焚天火域', realm: '化神', boss: '焚天老祖', note: '' },
     { name: '五行妖神谷', realm: '化神', boss: '金蛟王→土行孫子', note: '試煉：補全五行靈根' },
     { name: '虛空裂縫', realm: '煉虛', boss: '虛無之主', note: '' },

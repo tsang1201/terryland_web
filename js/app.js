@@ -161,7 +161,7 @@
     return `
       <div class="panel">
         <h2 class="page-title">🔪 法寶庫</h2>
-        <div class="page-desc">低階 15 件・中階 19 件・高階 22 件・頂級 24 件・通天靈寶 22 件，共 ${D.treasures.length} 件</div>
+        <div class="page-desc">低階 15 件・中階 19 件・高階 19 件・頂級 20 件・通天靈寶 19 件，共 ${D.treasures.length} 件</div>
         <div class="filter-row">${sel}</div>
         <div id="treasure-grid" class="grid">${cards}</div>
         <div class="note">${esc(D.treasureNote)}</div>

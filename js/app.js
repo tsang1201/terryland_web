@@ -15,6 +15,7 @@
     { id: 'dungeon',   label: '副本' },
     { id: 'story',     label: '主線' },
     { id: 'effect',    label: '特殊效果' },
+    { id: 'title',     label: '稱號' },
     { id: 'gameplay',  label: '玩法' },
   ];
 
@@ -369,6 +370,29 @@
         <h2 class="page-title">⚜ 特殊效果</h2>
         <div class="page-desc">戰場上翻雲覆雨的狀態機制。附身咒於功法法寶，定鼎勝負於一念之間。</div>
         ${list}
+      </div>
+    `;
+  };
+
+  pages.title = () => {
+    const badges = { '境界': 'badge-tier', '成就': 'badge-unique', '特殊': 'badge-rare' };
+    const rows = D.titles.map(t => `
+      <tr>
+        <td><b>${esc(t.name)}</b></td>
+        <td><span class="badge ${badges[t.type] || 'badge-tier'}">${esc(t.type)}</span></td>
+        <td>${esc(t.obtain)}</td>
+        <td class="td-effect">${t.effect ? `<span style="color:#ffd700">${esc(t.effect)}</span>` : '<span style="opacity:.5">—</span>'}</td>
+      </tr>`).join('');
+
+    return `
+      <div class="panel">
+        <h2 class="page-title">🏅 稱號錄</h2>
+        <div class="page-desc">達成條件即獲稱號，可於修仙面板裝備展示；部分稱號帶有特殊效果。共 ${D.titles.length} 個一般稱號。</div>
+        <table>
+          <tr><th>稱號</th><th>類型</th><th>獲得方式</th><th>特殊效果</th></tr>
+          ${rows}
+        </table>
+        <div class="note">${esc(D.treasureTitles)}</div>
       </div>
     `;
   };

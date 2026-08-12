@@ -319,8 +319,34 @@ const DATA = {
     { name: '小鳳', rarity: '真靈', base: '暴傷+15%', evolve: '鳳凰→涅槃鳳尊（暴傷+40%）', penalty: '捕捉-10%' },
     { name: '小龍', rarity: '真靈', base: '穿透+10%', evolve: '巨龍→九天真龍（穿透+30%）', penalty: '捕捉-10%' },
     { name: '幻靈', rarity: '真靈', base: '閃避+10%', evolve: '千幻→虛空幻主（閃避+30%）', penalty: '捕捉-10%' },
+    { name: '小鐵', rarity: '普通', base: '減傷+3%', evolve: '老鐵666（減傷+6%）', penalty: 0 },
+    { name: '吸血蝠', rarity: '普通', base: '吸血+2%', evolve: '血蝠王（吸血+5%）', penalty: 0 },
+    { name: '猛獁', rarity: '高級', base: '減傷+6%', evolve: '森猛獁→鎮山猛獁聖主（減傷+20%）', penalty: '捕捉-5%' },
+    { name: '血蟒', rarity: '高級', base: '吸血+4%', evolve: '赤血蟒→赤血吞天蟒（吸血+15%）', penalty: '捕捉-5%' },
+    { name: '古玄武', rarity: '真靈', base: '減傷+10%', evolve: '遠古玄武→太古鎮世玄武（減傷+30%）', penalty: '捕捉-10%' },
+    { name: '噬血龍', rarity: '真靈', base: '吸血+6%', evolve: '噬血魔龍→血海噬天龍帝（吸血+22%）', penalty: '捕捉-10%' },
   ],
   petNote: '同時最多上陣 2 隻靈寵提供加成。捕捉球機率：普通球10%／高級球20%／超級球30%／究極球40%／大師球100%。餵食果實可進化，閃光形態 1% 機率屬性加成翻倍。',
+
+  // ===== 稱號 =====
+  titles: [
+    { name: '幸運星', type: '特殊', obtain: '簽到機率獲得', effect: '修炼速度+20%' },
+    { name: '天選之人', type: '特殊', obtain: '特殊途徑獲得', effect: '修炼速度+10%' },
+    { name: '初入道途', type: '境界', obtain: '完成註冊', effect: '' },
+    { name: '練氣圓滿', type: '境界', obtain: '達到練氣12層', effect: '' },
+    { name: '築基有成', type: '境界', obtain: '達到築基期', effect: '' },
+    { name: '結丹真人', type: '境界', obtain: '達到結丹期', effect: '' },
+    { name: '元嬰老祖', type: '境界', obtain: '達到元嬰期', effect: '' },
+    { name: '化神大能', type: '境界', obtain: '達到化神期', effect: '' },
+    { name: '煉虛聖人', type: '境界', obtain: '達到煉虛期', effect: '' },
+    { name: '合體至尊', type: '境界', obtain: '達到合體期', effect: '' },
+    { name: '大乘圓滿', type: '境界', obtain: '達到大乘期', effect: '' },
+    { name: '真仙下凡', type: '境界', obtain: '飛升成為真仙', effect: '' },
+    { name: '煉丹大師', type: '成就', obtain: '累計煉丹成功 10 次', effect: '' },
+    { name: '煉器大師', type: '成就', obtain: '累計煉器成功 5 次', effect: '' },
+    { name: '寶可夢大師', type: '成就', obtain: '捕捉 10 種不同靈獸', effect: '' },
+  ],
+  treasureTitles: '持有特定通天靈寶會獲得客製稱號（如誅仙劍祖、滅神之矛、虛天鼎主、東皇太一、閻羅天子等），獲得即授予且永久擁有。',
 
   // ===== 主線 =====
   story: [

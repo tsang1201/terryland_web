@@ -358,8 +358,8 @@ const DATA = {
 
   // ===== 副本 =====
   dungeons: [
-    { name: '青木妖窟', realm: '練氣', boss: '木魁', note: '' },
-    { name: '血霧沼澤', realm: '築基', boss: '毒蛟', note: '' },
+    { name: '石硤尾邨', realm: '練氣', boss: '葉問', note: '' },
+    { name: '凌晨三點嘅麥當勞', realm: '築基', boss: '麥當勞叔叔', note: '' },
     { name: '萬妖谷', realm: '結丹', boss: '妖皇', note: '' },
     { name: '幽冥鬼域', realm: '元嬰', boss: '幽冥鬼王', note: '' },
     { name: '焚天火域', realm: '化神', boss: '焚天老祖', note: '' },
@@ -368,7 +368,7 @@ const DATA = {
     { name: '古神遺跡', realm: '合體', boss: '殘存古神（誅仙四劍）', note: '' },
     { name: '九霄雷庭', realm: '大乘', boss: '太古雷帝（滅神矛）', note: '' },
   ],
-  dungeonNote: '每個副本 3 關，首通豐厚獎勵，重複通關僅靈石。勝利後進入 30 分鐘冷卻。五行妖神谷為一次性試煉：五王各持隨機頂級法寶（獨一無二）+肉身加成，擊敗直接補全對應屬性靈根，全通即達成五行合一。',
+  dungeonNote: '每個副本 3 關，首通豐厚獎勵，重複通關僅靈石。勝利後該關卡進入 30 分鐘冷卻（逐關獨立，不影響其他小怪）。五行妖神谷為一次性試煉：五王各持隨機頂級法寶（獨一無二）+肉身加成，擊敗直接補全對應屬性靈根，全通即達成五行合一。',
 
   // ===== 丹方 =====
   alchemy: {
@@ -431,13 +431,13 @@ const DATA = {
       '均衡目標：滿配同階戰士單場約削血 12~19%，需約 5-9 人合力',
     ],
     bosses: [
-      { realm: '練氣', name: '陳友智', hp: 41679, mult: 11, tier: '低階', herbs: '黃精草、玉髓芝、靈泉水', materials: '鐵背蒼狼牙、玄冰蠶絲', pills: '築基丹', stones: '600~1000', high: false, people: 8 },
-      { realm: '築基', name: '馬文康', hp: 42367, mult: 2.2, tier: '中階', herbs: '金靈子、血枸杞、合歡花', materials: '鐵背蒼狼牙、百年火蟒鱗', pills: '降塵丹', stones: '2000~3500', high: false, people: 8 },
-      { realm: '結丹', name: '蔡樂懷', hp: 787595, mult: 7.1, tier: '高階', herbs: '地靈藤、紫猴花、千年靈乳、天靈果', materials: '金角犀獨角、千年寒鐵母', pills: '補天丹', stones: '4000~6500', high: false, people: 8 },
+      { realm: '練氣', name: '逃犯-陳友智', hp: 41679, mult: 11, tier: '低階', herbs: '黃精草、玉髓芝、靈泉水', materials: '鐵背蒼狼牙、玄冰蠶絲', pills: '築基丹', stones: '600~1000', high: false, people: 8 },
+      { realm: '築基', name: '色魔-馬文康', hp: 42367, mult: 2.2, tier: '中階', herbs: '金靈子、血枸杞、合歡花', materials: '鐵背蒼狼牙、百年火蟒鱗', pills: '降塵丹', stones: '2000~3500', high: false, people: 8 },
+      { realm: '結丹', name: '王城守衛-羅德爾', hp: 787595, mult: 7.1, tier: '高階', herbs: '地靈藤、紫猴花、千年靈乳、天靈果', materials: '金角犀獨角、千年寒鐵母', pills: '補天丹', stones: '4000~6500', high: false, people: 8 },
       { realm: '元嬰', name: '思維老祖', hp: 4459406, mult: 6.7, tier: '高階', herbs: '龍鱗果、幽冥花、萬年靈乳', materials: '千年寒鐵母、噬魂蝶鱗粉', pills: '化神丹', stones: '8000~12000', high: true, people: 8 },
-      { realm: '化神', name: '狗王堅', hp: 5110401, mult: 1.55, tier: '頂級', herbs: '天火芝、玄冰仙蓮、九陽神參', materials: '天雷鵬骨、地心火龍鱗', pills: '太虛丹', stones: '14000~20000', high: true, people: 7 },
-      { realm: '煉虛', name: '唐三', hp: 443305335, mult: 27.5, tier: '頂級', herbs: '虛空花、太陰月華、萬年玄參', materials: '千年屍王心核、地心火龍鱗', pills: '虛無丹', stones: '24000~34000', high: true, people: 9 },
-      { realm: '合體', name: '老馮畜', hp: 11158177315, mult: 145, tier: '通天靈寶', herbs: '鴻蒙紫氣果、天道神葉、混沌青蓮', materials: '太古真龍逆鱗、萬載玄龜甲', pills: '合道丹', stones: '38000~54000', high: true, people: 5 },
+      { realm: '化神', name: '嘯天狗王-堅', hp: 5110401, mult: 1.55, tier: '頂級', herbs: '天火芝、玄冰仙蓮、九陽神參', materials: '天雷鵬骨、地心火龍鱗', pills: '太虛丹', stones: '14000~20000', high: true, people: 7 },
+      { realm: '煉虛', name: '王的遺孀-六月', hp: 443305335, mult: 27.5, tier: '頂級', herbs: '虛空花、太陰月華、萬年玄參', materials: '千年屍王心核、地心火龍鱗', pills: '虛無丹', stones: '24000~34000', high: true, people: 9 },
+      { realm: '合體', name: '妖王-豬頭帝', hp: 11158177315, mult: 145, tier: '通天靈寶', herbs: '鴻蒙紫氣果、天道神葉、混沌青蓮', materials: '太古真龍逆鱗、萬載玄龜甲', pills: '合道丹', stones: '38000~54000', high: true, people: 5 },
       { realm: '大乘', name: '馮問老母分身', hp: 8926541910, mult: 58, tier: '通天靈寶', herbs: '鴻蒙紫氣果、天道神葉、混沌青蓮', materials: '鳳凰涅槃羽、萬載玄龜甲', pills: '渡劫丹', stones: '58000~80000', high: true, people: 5 },
     ],
     note: '獎勵人人相同：抽 2 種靈草各 x2、1 種資材 x1、1 顆丹藥、隨機靈石；元嬰以上王額外加「高級靈石 x1」。王所持法寶僅供自身加成，擊殺不掉落。',

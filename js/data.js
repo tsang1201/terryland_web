@@ -103,8 +103,8 @@ const DATA = {
   // ===== 法寶 =====
   treasures: [
     { name: '青鋒劍', tier: '低階', type: '攻擊型', desc: '攻擊力+8%' },
-    { name: '多蘭劍', tier: '低階', type: '攻擊型', desc: '攻擊力+5%' },
-    { name: '多蘭盾', tier: '低階', type: '防禦型', desc: '防禦力+8%' },
+    { name: '多蘭劍', tier: '低階', type: '攻擊型', desc: '攻擊力+15' },
+    { name: '多蘭盾', tier: '低階', type: '防禦型', desc: '防禦力+20' },
     { name: '金光磚', tier: '低階', type: '攻擊型', desc: '攻擊10%機率150%傷害' },
     { name: '迷蹤鐘', tier: '低階', type: '輔助型', desc: '被攻擊10%機率使對方混亂' },
     { name: '玄鐵盾', tier: '低階', type: '防禦型', desc: '防禦+10%，生命<30%減傷30%' },
@@ -135,6 +135,7 @@ const DATA = {
     { name: '星火戒', tier: '中階', type: '攻擊型', desc: '暴擊+8%' },
     { name: '斬風劍', tier: '中階', type: '攻擊型', desc: '暴傷+15%' },
     { name: '黑風旗', tier: '中階', type: '輔助型', desc: '降低對方10%閃避' },
+    { name: '三相之力', tier: '中階', type: '全能型', desc: '攻擊+33、防禦+33、神識+33' },
     { name: '五行環', tier: '高階', type: '全能型', desc: '全屬性+5%，每回合隨機五行效果' },
     { name: '婆羅珠', tier: '高階', type: '輔助型', desc: '每回合回5%最大生命' },
     { name: '皇鱗甲', tier: '高階', type: '防禦型', desc: '防禦+15%，被攻擊20%減傷30%' },

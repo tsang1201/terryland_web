@@ -345,6 +345,8 @@ const DATA = {
     { name: '煉丹大師', type: '成就', obtain: '累計煉丹成功 10 次', effect: '' },
     { name: '煉器大師', type: '成就', obtain: '累計煉器成功 5 次', effect: '' },
     { name: '寶可夢大師', type: '成就', obtain: '捕捉 10 種不同靈獸', effect: '' },
+    { name: '多寶達人', type: '成就', obtain: '持有 10 件以上法寶', effect: '' },
+    { name: '精通萬法', type: '成就', obtain: '擁有 10 本以上功法', effect: '' },
   ],
   treasureTitles: '持有特定通天靈寶會獲得客製稱號（如誅仙劍祖、滅神之矛、虛天鼎主、東皇太一、閻羅天子等），獲得即授予且永久擁有。',
 

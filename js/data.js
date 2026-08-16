@@ -482,6 +482,7 @@ const DATA = {
       { name: '玉清丹', tier: '元嬰', usage: '元嬰 中期', effect: '修爲+1000', recipe: ['血精妖果', '玄天仙藤', '九葉芝'], price: 3500, type: '經驗' },
       { name: '太乙丹', tier: '元嬰', usage: '元嬰 後期', effect: '修爲+1200', recipe: ['陰陽玄龍草', '龍鱗果', '鳳血草'], price: 3500, type: '經驗' },
       { name: '造化丹', tier: '元嬰', usage: '元嬰 後期', effect: '修爲+1000｜突破+5%', recipe: ['幽冥花', '天靈花', '地元果', '陰陽玄龍草'], price: 5000, type: '突破' },
+      { name: '紫元破境丹', tier: '元嬰', usage: '元嬰 初期/中期', effect: '突破成功率+10%', recipe: ['天靈花', '地元果'], price: 3500, type: '突破' },
       { name: '化神丹', tier: '化神', usage: '元嬰 後期', effect: '突破成功率+15%', recipe: ['血精妖果', '玄天仙藤', '九葉芝', '陰陽玄龍草'], price: 5000, type: '突破' },
       { name: '天火丹', tier: '化神', usage: '化神 初期', effect: '修爲+1800', recipe: ['天火芝', '玄冰仙蓮'], price: 5600, type: '經驗' },
       { name: '玄冰丹', tier: '化神', usage: '化神 中期', effect: '修爲+1800', recipe: ['玄冰仙蓮', '九陽神參'], price: 5600, type: '經驗' },

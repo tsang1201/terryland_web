@@ -23,11 +23,11 @@ const DATA = {
   ],
 
   roots: [
-    { type: '天靈根', rate: '10%', roots: '單一屬性（5% 為稀有光/暗）', speed: 'x1.4' },
+    { type: '天靈根', rate: '10%', roots: '單一屬性（15% 為稀有光/暗）', speed: 'x1.4' },
     { type: '一般靈根', rate: '50%', roots: '2-3 種屬性', speed: 'x1.2~1.3' },
     { type: '偽靈根', rate: '40%', roots: '4-5 種屬性', speed: 'x1.0~1.1' },
   ],
-  rootNote: '靈根越多速度越低（每多一個 -0.1），但五行合一可突破煉虛。天靈根練氣/築基階段突破必定成功。',
+  rootNote: '靈根越多速度越低（每多一個 -0.1），但五行合一可突破煉虛。天靈根練氣/築基階段突破必定成功。光↔金、暗↔土互通：擁有光可修練金系功法、擁有暗可修練土系功法。混沌靈液（抽獎可得）可將一個五行靈根轉化為光/暗。',
 
   // ===== 功法 =====
   techniques: [
@@ -284,7 +284,8 @@ const DATA = {
         { name: '高階功法', rate: '5%', desc: '屬性匹配' },
         { name: '元嬰/化神靈草', rate: '17%', desc: '' },
         { name: '高階法寶', rate: '15%', desc: '' },
-        { name: '化神/煉虛丹藥', rate: '8%', desc: '' },
+        { name: '化神/煉虛丹藥', rate: '7%', desc: '' },
+        { name: '混沌靈液', rate: '1%', desc: '五行靈根轉化光/暗' },
         { name: '頂級資材 x3', rate: '8%', desc: '' },
         { name: '頂級法寶', rate: '3%', desc: '可重複' },
         { name: '大師球', rate: '3%', desc: '100%捕捉' },
@@ -300,7 +301,8 @@ const DATA = {
         { name: '閃光球', rate: '1%', desc: '捕捉必定閃光' },
         { name: '頂級法寶', rate: '13.5%', desc: '可重複' },
         { name: '高階法寶', rate: '15%', desc: '' },
-        { name: '元嬰/化神丹藥', rate: '11.5%', desc: '' },
+        { name: '元嬰/化神丹藥', rate: '9.5%', desc: '' },
+        { name: '混沌靈液', rate: '2%', desc: '五行靈根轉化光/暗' },
         { name: '元嬰/化神靈草', rate: '11.5%', desc: '' },
         { name: '頂級功法', rate: '8%', desc: '' },
         { name: '高階功法', rate: '8%', desc: '' },
@@ -314,7 +316,8 @@ const DATA = {
         { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
         { name: '頂級法寶', rate: '20%', desc: '可重複' },
         { name: '頂級功法', rate: '15%', desc: '' },
-        { name: '化神-大乘丹藥', rate: '17.5%', desc: '' },
+        { name: '化神-大乘丹藥', rate: '14.5%', desc: '' },
+        { name: '混沌靈液', rate: '3%', desc: '五行靈根轉化光/暗' },
         { name: '元嬰-大乘靈草', rate: '12.5%', desc: '' },
         { name: '頂級資材 x9', rate: '10%', desc: '' },
         { name: '高階法寶', rate: '10%', desc: '' },

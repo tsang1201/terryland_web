@@ -186,7 +186,7 @@ const DATA = {
     { name: '十億尊魂幡', tier: '通天靈寶', type: '攻擊型', desc: '攻擊+25%，30%機率300%傷害+詛咒', unique: true },
     { name: '雨之仙劍', tier: '通天靈寶', type: '攻擊型', desc: '攻擊+30%，25%機率250%傷害+冰凍+虛弱', unique: true },
     { name: '滅神矛', tier: '通天靈寶', type: '攻擊型', desc: '攻擊+30%，25%機率300%傷害，無視50%防禦', unique: true },
-    { name: '掌天瓶', tier: '通天靈寶', type: '輔助型', desc: '修練速度+100%，靈草種植/成熟速度+200%，戰鬥中每回合回復8%最大生命', unique: true },
+    { name: '掌天瓶', tier: '通天靈寶', type: '輔助型', desc: '修練速度+100%，種植加速200%+收成加倍，每回合回8%最大生命', unique: true },
     { name: '天逆珠', tier: '通天靈寶', type: '全能型', desc: '全屬性+15%，20%機率時間加速（行動兩次）', unique: true },
     { name: '萬妖塔', tier: '通天靈寶', type: '防禦型', desc: '防禦+30%，被攻擊25%反彈50%+護盾', unique: true },
     { name: '元合五極山', tier: '通天靈寶', type: '全能型', desc: '全屬性+20%，每回合五行鎮壓', unique: true },

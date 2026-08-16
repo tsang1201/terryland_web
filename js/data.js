@@ -249,6 +249,7 @@ const DATA = {
   gacha: {
     pools: [
       { id: 'normal', name: '普通池', cost: '300 靈石', desc: '入門獎勵', items: [
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
         { name: '靈石', rate: '34.5%', desc: '50-200' },
         { name: '高級靈石', rate: '0.5%', desc: 'x1' },
         { name: '練氣/築基靈草', rate: '20%', desc: '' },
@@ -260,6 +261,7 @@ const DATA = {
         { name: '低階資材', rate: '5%', desc: '鐵背蒼狼牙等' },
       ] },
       { id: 'medium', name: '中級池', cost: '1200 靈石', desc: '結丹/元嬰級', items: [
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
         { name: '靈石', rate: '20%', desc: '300-600' },
         { name: '高級靈石', rate: '1%', desc: 'x1' },
         { name: '高階功法', rate: '1%', desc: '' },
@@ -275,6 +277,7 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '5%', desc: '' },
       ] },
       { id: 'premium', name: '高級池', cost: '8000 靈石', desc: '元嬰/化神/煉虛級', items: [
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
         { name: '靈石', rate: '15%', desc: '600-1200' },
         { name: '高級靈石', rate: '2%', desc: 'x1' },
         { name: '頂級功法', rate: '8%', desc: '屬性匹配' },
@@ -292,9 +295,10 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '5%', desc: '' },
       ] },
       { id: 'lucky', name: '歐皇池', cost: '1 高級靈石', desc: '頂級獎勵', items: [
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
         { name: '天選之人', rate: '0.5%', desc: '獲得稱號「天選之人」' },
         { name: '閃光球', rate: '1%', desc: '捕捉必定閃光' },
-        { name: '頂級法寶', rate: '13.5%', desc: '獨一無二' },
+        { name: '頂級法寶', rate: '13.5%', desc: '可重複' },
         { name: '高階法寶', rate: '15%', desc: '' },
         { name: '元嬰/化神丹藥', rate: '11.5%', desc: '' },
         { name: '元嬰/化神靈草', rate: '11.5%', desc: '' },
@@ -307,7 +311,8 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '5%', desc: '' },
       ] },
       { id: 'ultimate', name: '至尊歐皇池', cost: '5 高級靈石', desc: '通天靈寶高機率', items: [
-        { name: '頂級法寶', rate: '20%', desc: '獨一無二' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
+        { name: '頂級法寶', rate: '20%', desc: '可重複' },
         { name: '頂級功法', rate: '15%', desc: '' },
         { name: '化神-大乘丹藥', rate: '17.5%', desc: '' },
         { name: '元嬰-大乘靈草', rate: '12.5%', desc: '' },

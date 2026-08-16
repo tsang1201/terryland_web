@@ -59,7 +59,7 @@
       </div>
       <h2 class="block-title">玩法速覽</h2>
       <div class="chips">${D.gameplay.map(g => `<span class="chip">${esc(g.title)}</span>`).join('')}</div>
-      <div class="note note-warn">⚠ 天機不可洩漏：頂級法寶與通天靈寶皆為「獨一無二」，先到先得，絕版即失——莫要錯過仙緣。</div>
+      <div class="note note-warn">⚠ 天機不可洩漏：通天靈寶為「獨一無二」，先到先得，絕版即失——莫要錯過仙緣；頂級法寶可重複獲得。</div>
     </div>
   `;
 

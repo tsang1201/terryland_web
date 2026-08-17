@@ -249,7 +249,7 @@ const DATA = {
   gacha: {
     pools: [
       { id: 'normal', name: '普通池', cost: '300 靈石', desc: '入門獎勵', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
         { name: '靈石', rate: '34.5%', desc: '50-200' },
         { name: '高級靈石', rate: '0.5%', desc: 'x1' },
         { name: '練氣/築基靈草', rate: '20%', desc: '' },
@@ -261,7 +261,7 @@ const DATA = {
         { name: '低階資材', rate: '5%', desc: '鐵背蒼狼牙等' },
       ] },
       { id: 'medium', name: '中級池', cost: '1200 靈石', desc: '結丹/元嬰級', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
         { name: '靈石', rate: '20%', desc: '300-600' },
         { name: '高級靈石', rate: '1%', desc: 'x1' },
         { name: '高階功法', rate: '1%', desc: '' },
@@ -277,7 +277,7 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '5%', desc: '' },
       ] },
       { id: 'premium', name: '高級池', cost: '7000 靈石', desc: '元嬰/化神/煉虛級', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
         { name: '靈石', rate: '15%', desc: '2500-3000' },
         { name: '高級靈石', rate: '2%', desc: 'x1' },
         { name: '頂級功法', rate: '8%', desc: '屬性匹配' },
@@ -296,7 +296,7 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '5%', desc: '' },
       ] },
       { id: 'lucky', name: '歐皇池', cost: '1 高級靈石', desc: '頂級獎勵', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
         { name: '天選之人', rate: '0.4%', desc: '獲得稱號「天選之人」' },
         { name: '閃光球', rate: '1%', desc: '捕捉必定閃光' },
         { name: '頂級法寶', rate: '13.5%', desc: '可重複' },
@@ -315,7 +315,7 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '2.5%', desc: '' },
       ] },
       { id: 'ultimate', name: '至尊歐皇池', cost: '5 高級靈石', desc: '通天靈寶高機率', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
         { name: '頂級法寶', rate: '19.9%', desc: '可重複' },
         { name: '頂級功法', rate: '15%', desc: '' },
         { name: '合體以上丹藥', rate: '14.5%', desc: '' },
@@ -381,7 +381,7 @@ const DATA = {
 
   // ===== 稱號 =====
   titles: [
-    { name: '幸運星', type: '特殊', obtain: '任意抽獎池 0.1% 機率獲得', effect: '被動每4小時獲得5%靈石' },
+    { name: '幸運星', type: '特殊', obtain: '任意抽獎池 0.1% 機率獲得', effect: '被動每6小時獲得5%靈石' },
     { name: '天選之人', type: '特殊', obtain: '特殊途徑獲得', effect: '修炼速度+10%' },
     { name: '初入道途', type: '境界', obtain: '完成註冊', effect: '' },
     { name: '練氣圓滿', type: '境界', obtain: '達到練氣12層', effect: '' },
@@ -579,7 +579,7 @@ const DATA = {
   { title: '靈寵養成', desc: '捕捉球捕捉 28 種靈寵，餵果實進化，上陣 2 隻（化神後 3 隻）加成' },
   { title: '切磋 PVP', desc: '與其他修仙者一對一切磋，勝利獲得突破感悟（上限+5%），每 1 小時可切磋一次' },
     { title: '功法主副系統', desc: '主功法全效、副功法半效，屬性需對應靈根' },
-    { title: '稱號系統', desc: '達成境界/成就獲得稱號，部分帶屬性加成（如幸運星+20%修練）' },
+    { title: '稱號系統', desc: '達成境界/成就獲得稱號，部分帶屬性加成（如天選之人+10%修練）' },
     { title: '世界Boss', desc: '同境界合力討伐全服共有的巨妖，擊敗後 24 小時重生，人人同獎' },
   ],
 };

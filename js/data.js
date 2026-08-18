@@ -200,7 +200,7 @@ const DATA = {
     { name: '東皇鐘', tier: '通天靈寶', type: '全能型', desc: '全屬性+15%，被攻擊25%減傷50%+反彈30%，攻擊25%機率250%傷害+震懾', unique: true },
     { name: '破滅神瞳', tier: '通天靈寶', type: '全能型', desc: '全屬性+15%，穿透+20%，神識+20%', unique: true },
     { name: '生死簿', tier: '通天靈寶', type: '特殊型', desc: '攻擊15%機率斬殺<30%；被擊殺20%機率續命', unique: true },
-    { name: '馮母伏豬鞭', tier: '通天靈寶', type: '攻擊型', desc: '暴擊+30%，暴傷+30%，吸血40%', unique: true },
+    { name: '馮母伏豬鞭', tier: '通天靈寶', type: '攻擊型', desc: '暴擊+30%，暴傷+50%，吸血40%，對方有護盾時傷害+30%', unique: true },
     { name: '馮問的內褲', tier: '通天靈寶', type: '特殊型', desc: '攻擊40%同時中毒+詛咒+虛弱', unique: true },
     { name: '不滅金鐘罩', tier: '通天靈寶', type: '防禦型', desc: '每回合刷新護盾（30%最大生命）', unique: true },
     { name: '無限手套', tier: '通天靈寶', type: '全能型', desc: '開局雙方血量減半，自身攻擊+66%', unique: true },

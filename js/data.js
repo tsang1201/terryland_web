@@ -11,9 +11,9 @@ const DATA = {
     { name: '元嬰',   stage: '初/中/後', threshold: '15000~24000', rate: '20%' },
     { name: '化神',   stage: '初/中/後', threshold: '30000~42000', rate: '15%' },
     { name: '煉虛',   stage: '初/中/後', threshold: '52000~72000', rate: '10%' },
-    { name: '合體',   stage: '初/中/後', threshold: '87000~120000', rate: '5%' },
-    { name: '大乘',   stage: '無',     threshold: '120000', rate: '—' },
-    { name: '真仙',   stage: '無',     threshold: '150000', rate: '—' },
+    { name: '合體',   stage: '初/中/後', threshold: '87000~150000', rate: '5%' },
+    { name: '大乘',   stage: '無',     threshold: '150000', rate: '—' },
+    { name: '真仙',   stage: '無',     threshold: '200000', rate: '—' },
   ],
 
   realmSpecial: [

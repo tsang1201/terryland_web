@@ -531,7 +531,7 @@ const DATA = {
       { realm: '元嬰', name: '思維老祖', hp: 4459406, mult: 6.7, tier: '頂級×3', herbs: '龍鱗果、幽冥花、萬年靈乳', materials: '千年寒鐵母、噬魂蝶鱗粉', pills: '化神丹', stones: '8000~12000', high: true, people: 8 },
       { realm: '化神', name: '嘯天狗王-堅', hp: 26376264, mult: 8, tier: '頂級×3＋通天靈寶×1', herbs: '天火芝、玄冰仙蓮、九陽神參', materials: '天雷鵬骨、地心火龍鱗', pills: '太虛丹', stones: '14000~20000', high: true, people: 8 },
       { realm: '煉虛', name: '王的遺孀-六月', hp: 443305335, mult: 27.5, tier: '通天靈寶×2＋頂級×3', herbs: '虛空花、太陰月華、萬年玄參', materials: '千年屍王心核、地心火龍鱗', pills: '虛無丹', stones: '24000~34000', high: true, people: 9 },
-      { realm: '合體', name: '妖王-豬頭帝', hp: 11158177315, mult: 145, tier: '通天靈寶×3＋頂級×3', herbs: '鴻蒙紫氣果、天道神葉、混沌青蓮', materials: '太古真龍逆鱗、萬載玄龜甲', pills: '合道丹', stones: '38000~54000', high: true, people: 5 },
+      { realm: '合體', name: '妖王-豬頭帝', hp: 11158177315, mult: 145, tier: '通天靈寶×3＋頂級×3', herbs: '神凰血芝、龍魂草、混沌果', materials: '太古真龍逆鱗、萬載玄龜甲', pills: '合道丹', stones: '38000~54000', high: true, people: 5 },
       { realm: '大乘', name: '馮問老母分身', hp: 8926541910, mult: 58, tier: '通天靈寶×7', herbs: '鴻蒙紫氣果、天道神葉、混沌青蓮', materials: '鳳凰涅槃羽、萬載玄龜甲', pills: '渡劫丹', stones: '58000~80000', high: true, people: 5 },
     ],
     note: '獎勵人人相同：抽 2 種靈草各 x2、1 種資材 x1、1 顆丹藥、隨機靈石；元嬰以上王額外加「高級靈石 x1」（每人每 Boss 僅一次）。王所持法寶僅供自身加成，擊殺不掉落。',  },

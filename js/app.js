@@ -96,7 +96,7 @@
           <tr><th>境界</th><th>突破所需修爲</th><th>成功率</th></tr>
           ${rows}
         </table>
-        <div class="note">凡人大乘飛升真仙時，需以肉身扛過九道雷劫（總傷害為最大生命的180%），可借助渡劫丹與噬天吸雷珠減傷。</div>
+        <div class="note">凡人大乘飛升真仙時，需以肉身扛過九道雷劫（總傷害為最大生命的380%），可借助渡劫丹與噬天吸雷珠減傷。</div>
       </div>
       <div class="panel">
         <h2 class="block-title">特殊突破</h2>

@@ -19,7 +19,7 @@ const DATA = {
   realmSpecial: [
     { realm: '結丹→元嬰', need: '心魔劫', desc: '必須作答心魔問題，道心堅定方能通過（30 秒內回覆 Y/N）' },
     { realm: '化神→煉虛', need: '五行合一', desc: '需集齊金木水火土五種靈根（光代金、暗代土），由五行妖神谷試煉補全' },
-    { realm: '大乘→真仙', need: '九道雷劫', desc: '以回合制戰鬥扛過九道天劫（總傷害 180% 最大生命），渡劫丹/噬天吸雷珠可減傷' },
+    { realm: '大乘→真仙', need: '九道雷劫', desc: '以回合制戰鬥扛過九道天劫（總傷害 380% 最大生命），渡劫丹/噬天吸雷珠可減傷' },
   ],
 
   roots: [
@@ -176,7 +176,7 @@ const DATA = {
     { name: '無相破妄針', tier: '頂級', type: '攻擊型', desc: '穿透+35%' },
     { name: '雷火令', tier: '頂級', type: '攻擊型', desc: '暴擊+15%，暴傷+30%' },
     { name: '滅世紅蓮', tier: '頂級', type: '攻擊型', desc: '暴傷+45%' },
-    { name: '噬天吸雷珠', tier: '頂級', type: '防禦型', desc: '生命+30%，防禦+30%，雷劫傷害-20%，攻擊25%麻痹' },
+    { name: '噬天吸雷珠', tier: '頂級', type: '防禦型', desc: '生命+30%，防禦+30%，雷劫傷害-15%，攻擊25%麻痹' },
     { name: '乾藍冰焰', tier: '頂級', type: '攻擊型', desc: '攻擊30%冰凍2回合，30%雙重暴擊' },
     { name: '太玄八卦圖', tier: '頂級', type: '控制型', desc: '攻擊+20%，15%機率震懾+混亂' },
     { name: '顛倒五行陣', tier: '頂級', type: '控制型', desc: '每回合使對方隨機屬性-15%' },
@@ -204,7 +204,7 @@ const DATA = {
     { name: '馮問的內褲', tier: '通天靈寶', type: '特殊型', desc: '攻擊40%同時中毒+詛咒+虛弱', unique: true },
     { name: '不滅金鐘罩', tier: '通天靈寶', type: '防禦型', desc: '每回合刷新護盾（30%最大生命）', unique: true },
     { name: '無限手套', tier: '通天靈寶', type: '全能型', desc: '開局雙方血量減半，自身攻擊+66%', unique: true },
-    { name: '紫羅極火', tier: '通天靈寶', type: '攻擊型', desc: '爆傷+60%，攻擊35%冰凍2回合', unique: true },
+    { name: '紫羅極火', tier: '通天靈寶', type: '攻擊型', desc: '爆傷+120%，攻擊35%冰凍2回合', unique: true },
   ],
 
   treasureNote: '通天靈寶為「獨一無二」：全服僅此一件，先到先得，一旦有人持有便絕版；頂級法寶可重複獲得。被搶先時獲得方會收到同階級其他法寶或靈石補償。',
@@ -249,7 +249,7 @@ const DATA = {
   gacha: {
     pools: [
       { id: 'normal', name: '普通池', cost: '300 靈石', desc: '入門獎勵', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時10%靈石）' },
         { name: '靈石', rate: '34.5%', desc: '50-200' },
         { name: '高級靈石', rate: '0.5%', desc: 'x1' },
         { name: '練氣/築基靈草', rate: '20%', desc: '' },
@@ -261,7 +261,7 @@ const DATA = {
         { name: '低階資材', rate: '5%', desc: '鐵背蒼狼牙等' },
       ] },
       { id: 'medium', name: '中級池', cost: '1200 靈石', desc: '結丹/元嬰級', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時10%靈石）' },
         { name: '靈石', rate: '20%', desc: '300-600' },
         { name: '高級靈石', rate: '1%', desc: 'x1' },
         { name: '高階功法', rate: '1%', desc: '' },
@@ -277,7 +277,7 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '5%', desc: '' },
       ] },
       { id: 'premium', name: '高級池', cost: '7000 靈石', desc: '元嬰/化神/煉虛級', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時10%靈石）' },
         { name: '靈石', rate: '15%', desc: '2500-3000' },
         { name: '高級靈石', rate: '2%', desc: 'x1' },
         { name: '頂級功法', rate: '8%', desc: '屬性匹配' },
@@ -297,7 +297,7 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '5%', desc: '' },
       ] },
       { id: 'lucky', name: '歐皇池', cost: '1 高級靈石', desc: '頂級獎勵', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時10%靈石）' },
         { name: '天選之人', rate: '0.4%', desc: '獲得稱號「天選之人」' },
         { name: '閃光球', rate: '1%', desc: '捕捉必定閃光' },
         { name: '頂級法寶', rate: '13.5%', desc: '可重複' },
@@ -317,7 +317,7 @@ const DATA = {
         { name: '頂級靈寵果實', rate: '2.5%', desc: '' },
       ] },
       { id: 'ultimate', name: '至尊歐皇池', cost: '5 高級靈石', desc: '通天靈寶高機率', items: [
-        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每6小時5%靈石）' },
+        { name: '幸運星', rate: '0.1%', desc: '獲得稱號（被動每4小時10%靈石）' },
         { name: '頂級法寶', rate: '19.9%', desc: '可重複' },
         { name: '頂級功法', rate: '15%', desc: '' },
         { name: '合體以上丹藥', rate: '12.5%', desc: '' },
@@ -384,7 +384,7 @@ const DATA = {
 
   // ===== 稱號 =====
   titles: [
-    { name: '幸運星', type: '特殊', obtain: '任意抽獎池 0.1% 機率獲得', effect: '被動每6小時獲得5%靈石' },
+    { name: '幸運星', type: '特殊', obtain: '任意抽獎池 0.1% 機率獲得', effect: '被動每4小時獲得10%靈石' },
     { name: '天選之人', type: '特殊', obtain: '特殊途徑獲得', effect: '修炼速度+10%' },
     { name: '初入道途', type: '境界', obtain: '完成註冊', effect: '' },
     { name: '練氣圓滿', type: '境界', obtain: '達到練氣12層', effect: '' },
@@ -513,7 +513,7 @@ const DATA = {
       { name: '神凰丹', tier: '合體', usage: '合體以上', effect: '永久神識+5%（限服2次）', recipe: ['神凰血芝', '龍魂草', '混沌果'], price: 50000, type: '永久' },
       { name: '天道丹', tier: '大乘', usage: '大乘 無', effect: '修爲+4000', recipe: ['鴻蒙紫氣果', '天道神葉'], price: 40000, type: '經驗' },
       { name: '無極丹', tier: '大乘', usage: '大乘 無', effect: '修爲+4200', recipe: ['天道神葉', '混沌青蓮'], price: 40000, type: '經驗' },
-      { name: '渡劫丹', tier: '大乘', usage: '大乘 無', effect: '渡劫傷害-20%', recipe: ['鴻蒙紫氣果', '天道神葉', '混沌青蓮'], price: 80000, type: '突破' },
+      { name: '渡劫丹', tier: '大乘', usage: '大乘 無', effect: '渡劫傷害-15%', recipe: ['鴻蒙紫氣果', '天道神葉', '混沌青蓮'], price: 80000, type: '突破' },
       { name: '鴻蒙丹', tier: '大乘', usage: '大乘 無', effect: '永久全屬性+3%（限服2次）', recipe: ['鴻蒙紫氣果', '天道神葉', '混沌青蓮'], price: 150000, type: '永久' },
     ],
     note: '依丹藥階級決定煉製成功率（越高階越難成丹）。服用需符合境界與小境界限制；「突破丹」於衝擊瓶頸時大幅提升成功率，「永久丹」服用後永久加成但有限次。',
@@ -537,7 +537,7 @@ const DATA = {
       { realm: '化神', name: '嘯天狗王-堅', hp: 26376264, mult: 8, tier: '頂級×3＋通天靈寶×1', herbs: '天火芝、玄冰仙蓮、九陽神參', materials: '天雷鵬骨、地心火龍鱗', pills: '太虛丹', stones: '14000~20000', high: true, people: 8 },
       { realm: '煉虛', name: '王的遺孀-六月', hp: 443305335, mult: 27.5, tier: '通天靈寶×2＋頂級×3', herbs: '虛空花、太陰月華、萬年玄參', materials: '千年屍王心核、地心火龍鱗', pills: '虛無丹', stones: '24000~34000', high: true, people: 9 },
       { realm: '合體', name: '妖王-豬頭帝', hp: 11158177315, mult: 145, tier: '通天靈寶×3＋頂級×3', herbs: '神凰血芝、龍魂草、混沌果', materials: '太古真龍逆鱗、萬載玄龜甲', pills: '合道丹', stones: '38000~54000', high: true, people: 5 },
-      { realm: '大乘', name: '馮問老母分身', hp: 8926541910, mult: 58, tier: '通天靈寶×7', herbs: '鴻蒙紫氣果、天道神葉、混沌青蓮', materials: '鳳凰涅槃羽、萬載玄龜甲', pills: '渡劫丹', stones: '58000~80000', high: true, people: 5 },
+      { realm: '大乘', name: '馮問老母分身', hp: 30781179000, mult: 200, tier: '通天靈寶×7', herbs: '鴻蒙紫氣果、天道神葉、混沌青蓮', materials: '鳳凰涅槃羽、萬載玄龜甲', pills: '渡劫丹', stones: '58000~80000', high: true, people: 5 },
     ],
     note: '獎勵人人相同：抽 2 種靈草各 x2、1 種資材 x1、1 顆丹藥、隨機靈石；元嬰以上王額外加「高級靈石 x1」（每人每 Boss 僅一次）。王所持法寶僅供自身加成，擊殺不掉落。',  },
 
